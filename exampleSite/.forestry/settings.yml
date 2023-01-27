@@ -5,8 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: exampleSite/config.toml
+  path: exampleSite
   label: Configure
+  create: all
+  match: "*.toml"
+  new_doc_ext: toml
 - type: directory
   path: exampleSite/content/blog
   label: Blog
